@@ -1,0 +1,170 @@
+/* Базові стилі для header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px; /* Зменшений внутрішній відступ */
+    background: linear-gradient(90deg, #FF69B4, #800080); /* Розовий до фіолетового */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #FF1493; /* Темно-розовий */
+    height: 50px; /* Зменшена висота */
+}
+
+/* Логотип */
+header .logo {
+    flex: 1;
+    font-size: 1.2em; /* Зменшений розмір шрифту */
+    font-weight: bold;
+    color: white;
+}
+
+/* Центрування навігації */
+header .center {
+    flex: 4;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px; /* Зменшений проміжок між пунктами меню */
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px; /* Зменшений внутрішній відступ */
+    font-size: 0.9em; /* Зменшений розмір шрифту */
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+header nav ul li a:hover {
+    border-bottom: 2px solid white;
+}
+
+/* Стилі для dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+    flex: 1;
+}
+
+.dropdown select {
+    padding: 5px 10px; /* Зменшений внутрішній відступ */
+    font-size: 0.9em; /* Зменшений розмір шрифту */
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Світла тема */
+html.light header {
+    background: linear-gradient(90deg, #FF69B4, #800080); /* Розовий до фіолетового */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #FF1493; /* Темно-розовий */
+}
+
+html.light header .logo,
+html.light header nav ul li a {
+    color: white;
+}
+
+html.light header nav ul li a:hover {
+    border-bottom: 2px solid white;
+}
+
+html.light .dropdown select {
+    background-color: white;
+    border-color: #FF69B4;
+}
+
+html.light .dropdown select:hover {
+    background-color: #FFF8E7;
+    border-color: #FF69B4;
+}
+
+html.light .language-links ul {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+html.light .language-links ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+html.light .language-links ul li a:hover {
+    border-bottom: 2px solid white;
+}
+
+/* Темна тема */
+html.dark header {
+    background: linear-gradient(90deg, #800080, #FF69B4); /* Фіолетовий до розового */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid #FF1493; /* Темно-розовий */
+}
+
+html.dark header .logo,
+html.dark header nav ul li a {
+    color: #FF69B4; /* Розовий */
+}
+
+html.dark header nav ul li a:hover {
+    border-bottom: 2px solid #FF69B4; /* Розовий */
+}
+
+html.dark .dropdown select {
+    background-color: #4B0082; /* Темно-фіолетовий */
+    color: #FF69B4; /* Розовий */
+    border-color: #FF69B4; /* Розовий */
+}
+
+html.dark .dropdown select:hover {
+    background-color: #800080; /* Фіолетовий */
+    border-color: #FF69B4; /* Розовий */
+}
+
+html.dark .language-links ul {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+html.dark .language-links ul li a {
+    text-decoration: none;
+    color: #800080; /* Розовий */
+    padding: 5px 10px;
+    font-size: 0.9em;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+html.dark .language-links ul li a:hover {
+    border-bottom: 2px solid #800080; /* Розовий */
+}

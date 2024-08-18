@@ -1,0 +1,15 @@
+{
+    "head": {
+        "title": "pl"
+    },
+    "header": {
+        "menu1": "Strona główna",
+        "menu2": "O mnie",
+        "menu3": "Projekty",
+        "menu4": "Kontakt",
+        "button": {
+            "light": "Jasny",
+            "dark": "Ciemny"
+        }
+    }
+}
